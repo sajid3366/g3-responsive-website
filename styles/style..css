@@ -36,13 +36,13 @@ nav {
 
 nav ul {
     display: flex;
-    
+
 }
 
 nav ul li {
     list-style: none;
     margin-right: 2rem;
-    
+
 }
 
 nav a {
@@ -51,115 +51,228 @@ nav a {
     font-weight: 500;
     color: black;
 }
+
 /* banner section */
 .banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
-.banner-title{
+
+.banner-title {
     font-size: 64px;
     font-weight: 700;
     color: #131313;
     margin-top: 80px;
 }
-.banner-description{
+
+.banner-description {
     color: #727272;
     margin: 20px 0;
 }
-.banner img{
+
+.banner img {
     width: 100%;
     margin: 50px 0 0;
 }
+
 /* for responsive */
 /* mobile device */
 @media screen and (max-width:576px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
-        gap: 20px 0 ;
+        gap: 20px 0;
     }
-    
+
 }
+
 /* medium devices */
 @media screen and (min-width:576px) and (max-width:992px) {
-    header{
+    header {
         padding: 20px 80px;
     }
-    
+
 }
 
 /* main section */
-main{
+main {
     max-width: 1440px;
     margin: 0 auto;
 }
-.feature-container{
+
+.feature-container {
     display: flex;
     align-items: center;
     margin: 0 100px;
 }
-.team-image{
+
+.team-image {
     gap: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 10px;
 }
-.team-content{
+
+.team-content {
     padding-left: 70px;
     padding-right: 70px;
 }
-.team-title{
+
+.team-title {
     font-size: 45px;
 }
-.quick-list{
+
+.quick-list {
     color: #727272;
     font-weight: 500;
 
 }
-.our{
+
+.our {
     color: #131313;
     font-weight: 700;
 }
-.feature{
+
+.feature {
     color: #FF900E;
     font-weight: 700;
 }
-.team-description{
+
+.team-description {
     color: #727272;
     margin: 24px 0 32px;
 }
+
 /* team responsive */
 /* for mobile */
 @media screen and (max-width:576px) {
-    main{
+    main {
         max-width: 576px;
         margin: 0 auto;
     }
-    .feature-container{
+
+    .feature-container {
         flex-direction: column;
     }
-    .team-content{
+
+    .team-content {
         margin-top: 20px;
         padding-left: 20px;
         padding-right: 20px;
     }
-    .team-image{
+
+    .team-image {
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
 }
+
 /* medium devices */
 @media screen and (min-width:576px) and (max-width:992px) {
-    .feature-container{
+    .feature-container {
         flex-direction: column;
     }
-    .team-content{
+
+    .team-content {
         margin-top: 20px;
         text-align: center;
-        
+
     }
-     
+
+}
+
+/* experience section */
+.experience-container {
+    display: flex;
+    margin: 100px 220px;
+
+}
+
+.experience-title {
+    font-size: 45px;
+}
+
+.experience-description {
+    color: #727272;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.experience-image img {
+    width: 100%;
+    margin-left: 100px;
+    height: 100%;
+}
+
+.experience-box {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.experience-box-title {
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.experience-box-description {
+    color: #727272;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 50px 30px;
+    font-size: 25px;
+    position: relative;
+    bottom: 70px;
+    left: 35px;
+}
+
+/* experience responsive */
+/* for mobile  */
+@media screen and (max-width:576px) {
+    .experience-container {
+        flex-direction: column;
+        margin: 100px 20px;
+    
+    }
+    .experience-image img {
+        width: 100%;
+        margin-left: -5px;
+        margin-top: 10px;
+        height: 100%;
+    }
+    .btn {
+        padding: 50px 30px;
+        font-size: 25px;
+        position: relative;
+        bottom: 70px;
+        left: 5px;
+    }
+}
+
+/* medium devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .experience-container {
+        flex-direction: column;
+        margin: 100px 50px;
+    
+    }
+    .experience-image img {
+        width: 100%;
+        margin-top: 20px;
+        height: 100%;
+        margin-left: -5px;
+    }
+
 }
